@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script type="text/javascript">
+
+        var cad = prompt("Ingrese la cadena de string a analizar: ");
+        cad = cad.toLowerCase();
+        let cad2 = [...cad];
+        var vocales = ["a", "e", "i", "o", "u"];
+        var band = 0;
+        var pos = 0;
+        for (let i = 0; i < cad2.length; i++) {
+            for (let j = 0; j < 5; j++)
+                if (cad2[i] == vocales[j]) {
+                    band = 1;
+                    pos = (i + 1);
+                    i = cad2.length;
+                }
+        }
+
+
+        alert("La primer vocal esta en la posición " + pos)
+
+
+    </script>
+    <p></p>
+</body>
+
+</html>

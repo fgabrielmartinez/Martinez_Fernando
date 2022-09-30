@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<body>
+    <script type="text/javascript">
+
+        var cad = prompt("Ingrese la cadena de string a invertir: ");
+        var aux1 = [];
+        var aux2 = [];
+        var cant = cad.length;
+        var cant2 = cant;
+        for (let i = 0; i < cant; i++) {
+            aux1[i] = cad.substring(i, i + 1)
+        }
+        for (let i = 0; i < cant; i++) {
+            aux2[cant2] = aux1[i];
+            cant2 = cant2 - 1
+        }
+        aux2 = aux2.join("");
+        alert(aux2);
+
+    </script>
+    <p></p>
+</body>
+
+</html>

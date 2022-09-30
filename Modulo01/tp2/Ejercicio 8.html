@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<body>
+    <script type="text/javascript">
+
+        var numeros = [];
+
+
+        for (let i = 0; i < 100; i++) {
+            numeros[i] = Math.floor(Math.random() * 100);//ingreso un valor aleatorio
+            if (i > 0) {
+                for (let j = i - 1; j > -1; j--) {
+                    if (numeros[i] == numeros[j]) {
+                        // compruebo si hay una coicindencia
+                        j = 0;
+                        i = i - 1;//si hay coincidencia vuelvo a ingresar
+                    }
+                }
+            }
+
+        }
+
+       document.write(numeros);
+
+
+    </script>
+    <p></p>
+</body>
+
+</html>

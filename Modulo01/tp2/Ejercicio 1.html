@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script type="text/javascript">
+
+        var valores = [true, false, 2, "hola", "mundo", 3, "char"];
+        let cantidad = valores.length;
+        let masletras = 0;
+        let auxletras = 0
+        let auxmenor = valores[0];
+        for (let i = 0; i < cantidad; i++) {
+            if (typeof valores[i] == "string") {
+                if (valores[i].length > auxletras) {
+                    auxletras = valores[i].length;
+                    masletras = valores[i];
+                }
+            }
+        }
+        alert("El elemento con mas cantidad de letras es " + masletras);
+        for (let i = 0; i < cantidad; i++) {
+            for (let j = i; j < cantidad; j++) {
+                if (valores[j].length < valores[i].length) {
+                    auxmenor = valores[j];
+                    valores[j] = valores[i];
+                    valores[i] = auxmenor;
+                }
+
+            }
+        }
+        for (let i = 0; i < cantidad; i++) {
+            alert("El valor " + i + " es " + valores[i])
+        }
+        for (let i = 0; i < cantidad; i++) {
+            if (typeof valores[i] == "number") {
+                for (let j = i + 1; j < cantidad; j++) {
+                    if (typeof valores[j] == "number") {
+                        var suma = valores[i] + valores[j];
+                        var resta = valores[i] - valores[j];
+                        var mult = valores[i] * valores[j];
+                        var div = valores[i] / valores[j];
+                    }
+                }
+            }
+        }
+        alert("La suma entre los valores numéricos es " + suma);
+        alert("La resta entre los valores numéricos es " + resta);
+        alert("La multiplicación entre los valores numéricos es " + mult);
+        alert("La división entre los valores numéricos es " + div);
+
+
+    </script>
+    <p></p>
+</body>
+
+</html>

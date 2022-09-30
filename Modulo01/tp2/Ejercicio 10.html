@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<body>
+    <script type="text/javascript">
+
+        var meses = [];
+        var band = 0;
+        var prom = 0;
+        var sum = 0;
+        var mes = 0;
+
+        while (band == 0) {
+            mes = prompt("Ingrese el mes de 1 a 12")
+            if (mes < 1 || mes > 12) {
+                alert("el mes ingresado no es valido");
+            }
+            else {
+                band = 1;
+            }
+        }
+        switch (mes) {
+            case "1":
+            case"3":
+            case "5":
+            case "7":
+            case "8":
+            case "10":
+            case "12":
+                alert("El mes ingresado tiene 31 dias");
+                break
+            case "2":
+                alert("El mes ingresado tiene 28 dias");
+                break
+            case "4":
+            case "6":
+            case "9":
+            case "11":
+                alert("El mes ingresado tiene 30 dias");
+                break
+        }
+
+    </script>
+    <p></p>
+</body>
+
+</html>
