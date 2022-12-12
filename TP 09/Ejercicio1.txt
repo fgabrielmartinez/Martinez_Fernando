@@ -1,0 +1,10 @@
+Ejercicio 1
+Investigar y dar una definición con sus palabras los siguientes términos:
+
+REST cualquier interfaz entre sistemas que utilice HTTP para obtener datos o modificarlos
+
+API un software programado que se comunica con otro software
+
+Endpoint Los endpoints son las URLs de un API o un backend que responden a una petición.
+
+Encabezados (headers) se utilizan para enviar datos asociados a la peticion o la respuesta

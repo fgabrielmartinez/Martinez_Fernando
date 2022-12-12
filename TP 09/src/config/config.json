@@ -1,0 +1,11 @@
+{
+    "server":{
+        "port":3001
+    },
+    "database": {
+        "host": "localhost",
+        "user": "root",
+        "password": "root123",
+        "database": "alpha-silicon-01"
+    }
+}
